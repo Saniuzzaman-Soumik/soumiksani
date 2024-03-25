@@ -1,0 +1,237 @@
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--lighting-color);
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+div.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav li {
+  font-size: 1.4rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+#hero {
+    background: var(--dark-color);
+    border-bottom: 4px solid var(--lighting-color);
+    padding: 4rem 0;
+    max-height: 100vh;
+}
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.hero-image {
+  flex-basis: auto;
+  height: 590px;
+}
+.hero-content {
+    font-family:Arial, Helvetica, sans-serif;
+  flex-basis: auto;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  animation:  typing alternate;
+  /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+.hi-text{
+    color: var(--secondary-color);
+    font-size: 6rem;
+    font-weight: bold;
+}
+.name-text{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.p-text{
+    display: inline-block;
+    font-size: 2.8rem;
+}
+
+#hero h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+#project{
+    background: var(--darker-color);
+    color: #fff;
+}
+
+#project h2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+/* .project-container{
+  width: 1300px;
+  overflow: hidden;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+} */
+
+.project-container {
+  width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 8rem;
+
+}
+.grid-item{
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: 440px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+#aa{
+  width: 100%;
+  text-decoration: none;
+  color: var(--darker-color);
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+}
+#aa h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: none;
+
+}
+.card:hover #aa h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+}
+
+#contact{
+  background: var(--dark-color);
+  width: 100%;
+  height: 980px;
+}
+#contact h2{
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.7rem;
+  padding-top: 20%;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.top-contact{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.contact-way{
+  display: flex;
+  font-size: 2.7rem;
+  color: #fff;
+  margin-right: 60px;
+}
+.top-contact i{
+  margin: auto 10px;
+}
+
+.bottom-contact{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-contact i{
+  margin: auto 10px;
+}
+footer{
+  width: 100%;
+  background: var(--darker-color);
+  color: #fff;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.close{
+   text-align: center;
+}
+.close p{
+  font-size: 30px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}

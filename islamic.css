@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background: #f5f6fa;
+}
+::selection {
+  color: #f5f6fa;
+  background: rgb(43, 118, 231);
+}
+.islamic-nav {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  box-shadow: 2px 3px 6px 0px;
+  margin-bottom: 50px;
+  background: #fff;
+
+}
+.islamic-nav img {
+  width: 7rem;
+}
+.islamic-nav #islamic-list {
+  display: flex;
+  list-style: none;
+  gap: 7px;
+}
+#islamic-list a {
+  text-decoration: none;
+  line-height: 57px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 8px;
+  font-weight: bold;
+  font-size: 17px;
+}
+#islamic-list a:hover {
+  background: skyblue;
+  color: #fff;
+  font-weight: bold;
+}
+#header-icon{
+    text-align: center;
+    margin-top: 8px;
+}
+/* header nav ends */
+.first-top{
+  max-width: 1500px;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+
+
+main{
+    width: 100%;
+}
+.top-card{
+    max-height: 250px;
+    max-width: 780px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.7);
+    text-align: start;
+    margin-left: 4%;
+    
+}  
+
+.card-nav ul{
+    list-style: none;
+    width: 100%;
+    margin-left: 6px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    
+}
+.card-nav li{
+    display: inline-block;
+    margin: 0 8px;
+
+}
+.card-nav a{
+    text-decoration: none;
+    color: #00a8ff;
+}
+.card-nav a:hover{
+    color: red;
+}
+
+
+.top-card > h1{
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.top-card > p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.time-list{
+  flex: 1;
+  width: 30%;
+  box-sizing: border-box;
+  align-items: start;
+}
+.time-list{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px 20px;
+
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 30px; */
+}
+.time-list > h2{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  font-size: 27px;
+  display: block;
+}
+.time-list > input{
+  font-size: 16px;
+  padding: 8px;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px;
+  flex-basis: 150px;
+}
+.time-list > a{
+  cursor: pointer;
+  font-size: 18px;
+text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: bold;
+color: brown;
+margin-left: 25%;
+}
+.time-list > input:hover{
+  color: red;
+  box-shadow: 0 1px 3px black; 
+}
+
+/* first card end  */
+
+.second-card{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.left-part{
+  margin-right: 2%;
+  flex: 2;
+  box-shadow: 0px 1px 3px 1px;
+}
+.left-part > h3{
+padding-left: 1%;
+font-size: 1.8rem;
+
+
+}
+.left-part > p{
+  padding-left: 1%;
+  margin-bottom: 4%;
+  margin-top: 3%;
+
+}
+
+.clock-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+/* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  margin-top: 2%;
+  margin-bottom: 5%; */
+}
+
+
+.top-part > img{
+  margin: 0 auto;
+}
+
+.shia{
+  margin-top: 3%;
+}
+.aa{
+  display: block;
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+}
+.discrip{
+  display: block;
+  padding: 6px;
+  font-size: 20px;
+  align-items: safe;
+}

@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+header > img{
+  width: 7rem;
+}
+
+@media (max-width: 920px) {
+  header{
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

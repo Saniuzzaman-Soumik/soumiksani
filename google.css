@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fullimg{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -100;
+}
+.header {
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.container ul{
+    list-style: none;
+    color: #fff;
+}
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.container ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.container ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.container ul li a i{
+    font-size: 25px;
+}
+#facebook{
+    color:#00a8ff;
+}
+#google{
+    color: #4cd137;
+    }
+#github{
+    color: #8c7ae6;
+}
+main{
+    width: 100%;
+}
+.top-content{
+    width: 100%;
+    display: block;
+    margin: 10% 0;
+}
+.top-content h1{
+    font-size: 5.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.input{
+    text-align: center;
+    width: 100%;
+    
+}
+.input .search{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    
+}
+.input input{
+    width: 70%;
+    padding: 10px 20px;
+    border: 1px solid #ddd ;
+    border-radius: 50px;
+}
+
+.input #s{
+    font-size: 20px;
+    color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    left: 15.8%;
+    top: 9px;
+    z-index: 100;
+}
+
+.input #k{
+    position: absolute;
+    right: 17%;
+    top: 9px;
+    z-index: 100;
+    color: rgba(0, 0, 0,0.6);
+}
+.input #m{
+    position: absolute;
+    right: 20%;
+    top: 9px;
+    z-index: 100;
+    color: rgba(0, 0, 0,0.6);
+}
